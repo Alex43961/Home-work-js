@@ -1,0 +1,47 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #292929;
+	height: 100vh;
+}
+
+h1 {
+	color: coral;
+}
+
+.exercise-wrapper {
+	width: 100%;
+
+}
+
+.exercise {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 40px;
+}
+
+#counter {
+	font-size: 20px;
+	color: red;
+}
+
+#word {
+	font-size: 20px;
+	color: greenyellow;
+}
+
+#guessedSymbol {
+	font-size: 20px;
+	color: blue;
+}
+
+.textFalse {
+	color: antiquewhite;
+	font-size: 20px;
+}

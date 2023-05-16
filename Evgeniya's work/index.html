@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./build/style/style.css" />
+    <link rel="stylesheet" href="./build/style/media.css" />
+    <link
+      rel="shortcut icon"
+      href="./public/icons/logo.svg"
+      type="image/x-icon"
+    />
+    <script
+      src="https://kit.fontawesome.com/151b089a62.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./build/js/app.js"></script>
+    <title>Notebook</title>
+  </head>
+
+  <body>
+    <div id="app">
+      <header class="header">
+        <div class="logo-wrapper">
+          <img src="./public/icons/logo.svg" alt="Logo" class="logo" />
+
+          <span class="logo__text">NOTES</span>
+        </div>
+      </header>
+
+      <main class="main">
+        <section class="section adding">
+          <textarea id="notebook" class="notebook"></textarea>
+
+          <button id="addButton" class="button add">
+            <i class="fa-solid fa-plus icon"></i>
+          </button>
+
+          <button id="doneButton" class="button done hidden">
+            <i class="fa-solid fa-check"></i>
+          </button>
+        </section>
+
+        <section id="notes" class="section notes">
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="logo-wrapper">
+          <img src="./public/icons/logo.svg" alt="Logo" class="logo" />
+
+          <span class="logo__text">NOTES</span>
+        </div>
+
+        <h5 class="footer__text">
+          Copyright &#169; Lashko E.L. All rights reserved.
+        </h5>
+      </footer>
+    </div>
+  </body>
+</html>

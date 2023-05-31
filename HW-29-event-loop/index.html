@@ -27,29 +27,56 @@
 			<main class="main">
 				<h1>Task</h1>
 				<div id="task-wrapper">
-					
+
 					<div id="task">
-						
-						<div id="taskContainer">
-							<label for="nameCallback">Enter name callback</label>
-							<input type="text" name="nameCallback" id="nameCallback">
-							<label for="sec"></label>
-							<input type="number" name="sec" id="sec">
+
+						<div id="callbackContainer">
+							<p class="taskName">setTimeout</p>
+							<div class="setTimeout-wrapper">
+								<p class="setTimeout">let <input type="text" name="nameCallback" id="nameCallback"
+									default='timerId'> = setTimeout(() => console.log("ничего не происходит"), <input
+									type="number" name="sec" id="sec" default='1'>000);</p>
+							</div>
+							
 							<button id="submitCallback">Enter</button>
 						</div>
+
+						<div id="logContainer">
+							<p class="taskName">console.log</p>
+							<div class="log-wrapper">
+								<p class="consoleLog">console.log("<input type="text" name="nameLog" id="nameLog">")</p>
+							</div>
+							
+							<button id="submitLog">Enter</button>
+						</div>
+						
+						<div id="promiseContainer">
+							<p class="taskName">Promise</p>
+							<div class="promise-wrapper">
+								
+							<p class="promise">let promise = new Promise(resolve => resolve("<input type="text"
+									name="namePromise" id="namePromise">"));</p>
+							<p class="promise">promise.then(console.log());</p>
+							</div>
+							
+							<button id="submitPromise">Enter</button>
+						</div>
+
 					</div>
 				</div>
-				
+				<h2>microtask queue</h2>
 				<div id="microTask-wrapper">
+
 					<div id="microTask">
-						<h2>microtask queue</h2>
+
 						<div id="microTaskContainer">
 						</div>
 					</div>
 				</div>
+				<h2>macrotask queue</h2>
 				<div id="macroTask-wrapper">
 					<div id="macroTask">
-						<h2>macrotask queue</h2>
+
 						<div id="macroTaskContainer">
 						</div>
 					</div>

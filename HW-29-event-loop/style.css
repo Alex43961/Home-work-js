@@ -18,6 +18,16 @@ h2 {
 	font-size: 30px;
 }
 
+button {
+	height: 50px;
+	width: 100px;
+	border: orangered 2px solid;
+	border-radius: 10px;
+	font-size: 30px;
+	color: rgb(14, 19, 123);
+	background-color: #1fd3b5;
+}
+
 .header {
 	margin-top: 20px;
 	display: flex;
@@ -45,16 +55,16 @@ h2 {
 	border: 5px solid green;
 	height: 60vh;
 	display: flex;
-	justify-content: center;	
+	justify-content: center;
 	border-radius: 30px;
-	
+
 }
 
 #webAPI-wrapper {
 	border: 5px solid rgb(213, 172, 84);
 	height: 60vh;
 	display: flex;
-	justify-content: center;	
+	justify-content: center;
 	border-radius: 30px;
 }
 
@@ -63,7 +73,73 @@ h2 {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+
+
+}
+
+#task-wrapper {
+
+	height: 40vh;
+}
+
+#task {
+	margin-top: 70px;
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+	gap: 60px;
+}
+
+#callbackContainer {	
+	display: flex;
+	flex-direction: column;
+}
+
+.setTimeout-wrapper {
+	height: 150px;
+	width: 250px;
+}
+
+#logContainer {	
+	display: flex;
+	flex-direction: column;
+}
+
+.log-wrapper {
+	height: 150px;
+	width: 250px;
+}
+
+#promiseContainer {
 	
+	display: flex;
+	flex-direction: column;
+}
+
+.promise-wrapper {
+	height: 150px;
+	width: 250px;
+}
+
+.taskName {
+	font-size: 25px;
+	color: rgb(254, 221, 3);
+	text-align: center;
+}
+
+.setTimeout {
+	font-size: 20px;
+	color: blue;
+}
+
+.consoleLog {
+	font-size: 20px;
+	color: blue;
+}
+
+.promise {
+	font-size: 20px;
+	color: blue;
 }
 
 #macroTask-wrapper {

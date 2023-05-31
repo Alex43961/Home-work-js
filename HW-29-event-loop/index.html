@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Document</title>
+</head>
+
+<body>
+	<div id="app">
+		<header class="header">
+			<p class="eventLoop">Event loop</pз>
+			<div class="img-wrapper">
+				<img src="Event-loop.png" alt="Event-loop" width="100px">
+			</div>
+		</header>
+		<div class="program-wrapper">
+			<div id="callStack-wrapper">
+				<div id="callStack">
+					<h1>Call stack</h1>
+					<div id="callStackContainer">
+					</div>
+				</div>
+			</div>
+			<main class="main">
+				<h1>Task</h1>
+				<div id="task-wrapper">
+					
+					<div id="task">
+						
+						<div id="taskContainer">
+							<label for="nameCallback">Enter name callback</label>
+							<input type="text" name="nameCallback" id="nameCallback">
+							<label for="sec"></label>
+							<input type="number" name="sec" id="sec">
+							<button id="submitCallback">Enter</button>
+						</div>
+					</div>
+				</div>
+				
+				<div id="microTask-wrapper">
+					<div id="microTask">
+						<h2>microtask queue</h2>
+						<div id="microTaskContainer">
+						</div>
+					</div>
+				</div>
+				<div id="macroTask-wrapper">
+					<div id="macroTask">
+						<h2>macrotask queue</h2>
+						<div id="macroTaskContainer">
+						</div>
+					</div>
+				</div>
+			</main>
+
+			<div id="webAPI-wrapper">
+				<div id="webAPI">
+					<h1>Web API</h1>
+					<div id="webAPIContainer">
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+	<script src="main.js"></script>
+</body>
+
+</html>

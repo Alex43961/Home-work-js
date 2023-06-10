@@ -43,26 +43,32 @@ document.getElementById('generate-user-btn').addEventListener('click', function 
 });
 
 
-async function spotify23 () {
-	const url = 'https://spotify23.p.rapidapi.com/search/?q=%3CREQUIRED%3E&type=multi&offset=0&limit=10&numberOfTopResults=5';
-const options = {
-	method: 'GET',
-	headers: {
-		'X-RapidAPI-Key': 'af8c4008fbmsh404c667533df09ep1a62a1jsn80fb45e242c9',
-		'X-RapidAPI-Host': 'spotify23.p.rapidapi.com'
-	}
-};
+ function randomDogImage () {
+	fetch("https://dog.ceo/api/breeds/image/random")
+	.then(function(response) {
+		if(response.ok) {
+			
+			return response.json();
+			
+		} else {
+			throw new Error("Error: " + response.status)
+		}
+	})
+	.then(function(data){
+console.log(data);
+document.getElementById("dog-image").src = data.message;
+	})
+	.catch(function(error){
+		console.log(error);
+	})
 
-try {
-	const response = await fetch(url, options);
-	const result = await response.text();
-	console.log(result);
-} catch (error) {
-	console.error(error);
 }
-}
+randomDogImage();
+document.getElementById('generate-dog-btn').addEventListener('click', function () {
+	randomDogImage();
+});
 
-spotify23();
+
 
 
 

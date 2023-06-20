@@ -39,8 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const firstNumber = document.getElementById('num1');
     const secondNumber = document.getElementById('num2');
     const operator = document.getElementById('operator');
-    //firstNumber.addEventListener('input', calculator);
-    //secondNumber.addEventListener('input', calculator);
+    firstNumber.addEventListener('input', calculator);
+    secondNumber.addEventListener('input', calculator);
     operator.addEventListener('change', calculator);
-    
 });

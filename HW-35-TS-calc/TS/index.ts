@@ -56,10 +56,9 @@ document.addEventListener('DOMContentLoaded', () => {
 		'operator'
 	) as HTMLSelectElement;
 
-	//firstNumber.addEventListener('input', calculator);
-	//secondNumber.addEventListener('input', calculator);
+	firstNumber.addEventListener('input', calculator);
+	secondNumber.addEventListener('input', calculator);
 	operator.addEventListener('change', calculator);
-	firstNumber.textContent = "";
-	secondNumber.value. = "";
+	
 });
 

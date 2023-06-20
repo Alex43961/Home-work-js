@@ -1,13 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">	
+	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>jQuery</title>
-	<script src="jquery-3.7.0.min.js"></script>
+	<script src="jQuery.js"></script>
+	<script type='module' src="main.js"></script>
+	<link rel="stylesheet" href="style.css">
+
 
 </head>
+
 <body>
+	<div id="app">
+		<section>
+			<form class='wrap'>
+				<img height='200' class='orderImg'
+					src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/681px-Placeholder_view_vector.svg.png'
+					alt=''>
+				<select class='orderSelect'>
+					<option>Read Meat</option>
+					<option>Royal canin</option>
+					<option>Beaph Care+</option>
+					<option>Tetra ReptoMin</option>
+
+				</select>
+				<input class='orderCount' type='range' min='1' max='1000' step="1" value="1">
+				<input class='orderTotal' disabled>
+				<button class='orderBtn'> make order </button>
+			</form>
+
+			<div class='orderMsg'> Order completed </div>
+		</section>
+	</div>
+
+
+
+
 	<script src="main.js"></script>
 </body>
+
 </html>

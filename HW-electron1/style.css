@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#app {
+    height: 800px;
+    width: 800px;
+    margin: auto;
+    background-color: darkgrey;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+
+#screen {
+    display: block;
+    width: 600px;
+    height: 600px;
+    background-color: #292929;
+}
+.button-wrapper {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn {
+    height: 40px;
+    width: 80px;
+    border: #1710e7 solid 2px;
+    border-radius: 4px;
+    background-color: rgb(18, 15, 15);
+    color: aliceblue;
+    font-size: 30px;
+}

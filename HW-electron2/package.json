@@ -1,0 +1,36 @@
+{
+  "name": "hw-electron2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "dev" : "electronmon .",
+    "build" : "electron-builder",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^25.3.1",
+    "electron-builder": "^24.6.3",
+    "electronmon": "^2.0.2"
+  },
+  "build": {
+    "appId": "cool-app43165456",
+    "win": {
+      "target": "nsis",
+      "icon": "./chat.png"
+    },
+    "directories": {
+      "output": "./build"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  }
+
+}

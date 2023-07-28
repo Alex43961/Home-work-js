@@ -1,0 +1,15 @@
+Сделайте так, чтобы код сортировки пузырьком работал быстрее:
+
+const bubbleSort = (arr) => {
+  for (let i = 0; i < arr.length; i += 1) {
+    for (let j = 0; j < arr.length; j += 1) {
+      if (arr[i] < arr[j]) {
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+      }
+    }
+  }
+};
+
+----
+
+в дз загружаете только файл с готовой функцией bubbleSort

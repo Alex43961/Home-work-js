@@ -2,10 +2,11 @@
   "name": "hw-electron1",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "start": "electron .",
     "dev": "electronmon .",
+    "build": "electron-builder",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -13,6 +14,11 @@
   "license": "ISC",
   "devDependencies": {
     "electron": "^25.3.0",
+    "electron-builder": "^24.6.3",
     "electronmon": "^2.0.2"
+  },
+  "dependencies": {
+    "yodasay": "^1.1.12",
+    "yosay": "^2.0.2"
   }
 }
